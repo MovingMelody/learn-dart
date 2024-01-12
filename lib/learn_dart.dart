@@ -3,4 +3,4 @@
 /// More dartdocs go here.
 library;
 
-export 'src/learn_dart_base.dart';
+export './learn_dart_base.dart';
