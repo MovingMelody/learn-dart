@@ -29,16 +29,12 @@ void main() {
   }
 }
 
+///
+/// using built-in split method
+///
 Map<String, int> countWordsUsingSplit({required String text}) {
   final Map<String, int> wordFrequencyMap = {};
 
-  ///
-  /// Split the text into words using whitespace as a separator
-  ///
-  /// '\s' matches whitespace character
-  ///
-  /// '\s+' matches one or more consecutive whitespace characters
-  ///
   final words = text.split(" ");
 
   for (final word in words) {
