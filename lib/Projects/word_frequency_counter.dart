@@ -33,7 +33,7 @@ void main() {
 /// using built-in split method
 ///
 Map<String, int> countWordsUsingSplit({required String text}) {
-  final Map<String, int> wordFrequencyMap = {};
+  final wordFrequencyMap = <String, int>{};
 
   final words = text.split(" ");
 
@@ -50,7 +50,7 @@ Map<String, int> countWordsUsingSplit({required String text}) {
 /// the frequency of each word
 ///
 Map<String, int> countWordsUsingRegExp({required String text}) {
-  final Map<String, int> wordFrequencyMap = {};
+  final wordFrequencyMap = <String, int>{};
 
   ///
   /// Split the text into words using whitespace as a separator
@@ -84,7 +84,7 @@ void displayMap({required Map<String, int> wordsMap}) {
   // Sort the word frequencies in descending order.
   final sortedMap = wordsMap.entries.toList()
     ..sort((a, b) => b.value.compareTo(a.value));
-  int totalWordsCount = 0;
+  var totalWordsCount = 0;
 
   print('\nWord Frequencies:');
   for (final entry in sortedMap) {
