@@ -14,6 +14,9 @@ extension GetByKeyIndex on Map<String, bool> {
   int indexOf({required String key}) => keys.toList().indexOf(key);
 }
 
+///
+/// 🏁 entry point
+///
 void main() {
   final tasksMap = <String, bool>{};
 
